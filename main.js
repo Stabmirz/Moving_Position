@@ -1,7 +1,7 @@
 
 var button = document.querySelector('.start');
 var print = document.querySelector('.matrix');
-var div = document.querySelector('.button');
+// var div = document.querySelector('.button');
 
 var preX = 0;
 var preY = 0;
