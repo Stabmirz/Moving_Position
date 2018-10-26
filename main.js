@@ -8,7 +8,7 @@ var preY = 0;
 
 var array= new Array(30);
 for (var i = 0; i < 30; i++){
-array[i] = new Array(30).fill( 0 );
+array[i] = new Array(30).fill("");
 }
 
 function clickButton(){ 
@@ -21,10 +21,10 @@ function clickButton(){
     setTimeout(() => {
         var posX =  15;
         var posY = 15;
-        array[preX][preY]= 0;
+        array[preX][preY]= " ";
         posX +=Math.floor(Math.random()* 2);
         posY +=Math.floor(Math.random()* 2);
-        array[posX][posY] = 'M';
+        array[posX][posY] =`<img style="height:220px;width:240px;" src="man.png">`;
         preX = posX;
         preY = posY;
         clickButton();
